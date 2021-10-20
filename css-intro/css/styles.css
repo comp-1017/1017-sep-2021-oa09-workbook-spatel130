@@ -1,3 +1,5 @@
+/* element (tag) selectors */
+
 h1 {
     color:red;
 }
@@ -13,3 +15,43 @@ h2, h3, h4, h5, h6 {
     background-color: #f4f4f4;
     border: 3px solid black;
 }
+
+/*decentant selectors
+  element element element ...*/
+  section aside p{
+      background-color: azure;
+      font-family: fantasy;
+      font-weight: bold;
+      font-style: italic;
+      font-size:large
+  }
+
+  /*child combinations 
+  parent -child */
+  section p{
+      font-size: xx-small;
+  }
+
+/*class selector 
+syntax for naming is .user-name{ rules}
+you are NOT using element namees
+classes can be attached to any element
+classes are independent of the element
+*/
+.box-text{
+    border-top: 10px solid blue;
+    background-color: chartreuse;
+
+}
+.color-yellow{
+    color: yellow;
+}
+/*id selector
+*/
+
+
+
+
+
+
+
