@@ -37,6 +37,7 @@ syntax for naming is .user-name{ rules}
 you are NOT using element namees
 classes can be attached to any element
 classes are independent of the element
+on html page class="user-name [user-name ...]"
 */
 .box-text{
     border-top: 10px solid blue;
@@ -46,7 +47,13 @@ classes are independent of the element
 .color-yellow{
     color: yellow;
 }
+
 /*id selector
+similar to a class selector  BUT is suppose to be use
+only once on the page where as a class may be use
+multiple times
+syntax #user-name{rules}
+on html page id="user-name" 
 */
 
 
