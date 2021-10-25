@@ -1,3 +1,8 @@
+footer {
+    background-color: #333;
+    color: yellow;
+}
+
 nav ul {
     /* if all rgb values are the same ie #dddddd you can use a shortcut 
      of just one hexcharacter #ddd     #333333 => #333 
@@ -7,18 +12,13 @@ nav ul {
 
 }
 
-nav ul li a{
+nav ul li {
     border-bottom:1px solid black;
 }
 
-nav a{
+nav ul li a{
     text-decoration: none; /*removes underline link*/
     color: #333;
-}
-
-footer {
-    background-color: #333;
-    color: yellow;
 }
 
 footer, footer a{
