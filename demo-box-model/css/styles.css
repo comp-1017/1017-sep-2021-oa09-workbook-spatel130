@@ -1,0 +1,86 @@
+/* Margins
+
+used to push elements apart from each other
+outside the border 
+top and bottom margins between stacked elements reduce to the higher 
+of the 2 specified margins
+Assume: element A has a bottom margin of 50px 
+        element B has a top margin of 30px
+    
+        one might expect the total distance between the elements to be
+            50 + 30 = 80px
+        however, due to margin-collapse the real distance will only be 50
+
+syntax
+long form
+margin-top: npx; margin-right: npx; margin-bottom: npx; margin-left: npx;
+
+short cuts
+margin: 24px 10px 24px 20px;    represents top right bottom left
+margin: 24px 10px;              represents top/bottom right/left
+margin: 24px;                   represents top=right=bottom=left
+margin: 24px 40px 10px          represents top bottom right/left
+
+create a class for the margin section 
+*/                                    
+.margin-section{
+    margin: 24px 12px 40px 6px;
+}  
+
+/* border
+separates the margin from the padding 
+it is visible if requested AND has a width 
+default width is 0 
+
+long hand
+border-style: none|solid|dotted|dashed|ridge|doublel|....
+border-width: npx|thin|medium|thick
+border-color: red|#rrgghh|rgb(r,g,b)|rgba(r,g,b,a)
+
+in addition you can affect only one side of the border 
+specify bottom, top, right, left
+
+border-style-bottom: ...;
+
+short hand
+border: width style color;
+
+create a border class of 5px (thick) dashed forestgreen*/
+
+.border-section{
+    border: 5px dashed forestgreen;
+}
+
+/* padding
+padding is the area between the border and the content
+think of a parking space (between car and line); a box with bubble wrap 
+
+setup of item is similar to  margin except use the word padding
+
+create a class with padding of 15px (all sides)
+*/
+.padding-section{
+    padding: 15px;
+}
+
+/* content width 
+physically specifies the number of pixels your content is to have for its
+horizontal (right to left) display.
+Height can also be specified BUT you could end up having content truncated 
+(not displayed) because the area requested is not sufficient
+to show all content due to the width and height. Height by default
+automatically expands to show all content.
+
+create a class to limit:
+ width: 300px
+ margin: 10px
+ border medium solid blue 
+ padding 30px top/bottom 10px right/left
+*/
+
+.width-section{
+    width: 1500px;
+    margin: 10px 10px 10px 50px;
+    border: medium solid blue;
+    padding: 30px 10px;
+}
