@@ -1,0 +1,53 @@
+body{
+    background-color: white;
+}
+
+.container{
+    /*
+    the margin is setting my 
+    top/bottom to 0
+    right/left to the middle of the browser window
+         takes the width of the container, subtracts the browser window,
+         divides the unused area by 2, sets the right/margin to
+         the calculated values
+
+    
+    specify the desired width of your web site page
+    width of 960px (this is a number the course has requested as its standard)
+    960 = lm + lb + lp + content-width + rp + rb + rm + .....
+    */
+    margin: 0 auto;
+    width: 960px;
+    font-size: 100%;
+    line-height: 1.5;
+}
+
+/* page layout */
+nav{
+    margin-top: 40px;
+    background-color: #ddd;
+}
+
+header{
+    background-color: #ddd;
+    height: 250px; /* fixed vertical height to simulate content*/
+    margin-top:24px;
+}
+
+main{
+    background-color: #ddd;
+    margin-top: 24px;
+    height: 500px; 
+}
+
+footer{
+    height: 150px;
+    background-color: red;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+/* descendant selector */
+footer h2{
+color: lime;
+}
