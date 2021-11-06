@@ -10,49 +10,55 @@ body {
     line-height: 1.5
 }
 
+/*
+20 + 0 + 0 + w + 0 + 0 + 10  red paint
++
+10 + 0 + 0 + w + 0 + 0 + 20  blue paint
+=960
+60 + 2w = 960
+w = (960 - 60) / 2
+w = 450
+*/
 .red-paint, .blue-paint{
-    width: 450px;
-    height: 300px;
+    width:450px;
+    height:300px;
 }
 
 .red-paint{
     background-color: red;
-    margin: 20px 10px 20px 20px;
+    margin: 20px 10px 20px 20px; /*top right bottom left*/
 }
 
 .blue-paint{
     background-color: blue;
-    margin: 20px 10px 20px 20px;
+    margin: 20px 20px 20px 10px;
 }
 
 .black-paint{
     /* 20 + 0 + 0 + w + 0 + 0 + 20 =960
-    40 + w =960
-    w = 960 - 49 = 920*/
-    width: 920px;
-    margin:0px 20px; /* top/bottom right/left */
-    height: 50px;
+       40 + w = 960
+       w = 960 - 40 = 920*/
+    width:920px;
+    margin:0px 20px 20px 20px; 
+    height:50px;
     background-color: black;
 }
 
-main, footer{
-    background-color: #c0c0c0;
-}
 
 /*
-
     create a "flex-container" that surrounds all the child elements
     you want to be display in a "column" fashion (floating left/right)
-
     "flex" the red and blue element (div)
-    parent is the next level up -> main
-
-    add the rule */
-
-main{
+    parent is the next level up  -> main
+    add the rule display: flex; to the element main
+    CONCERN: flex will place all child elements on a single row
+               adjusting all widths AUTOMATICALLY!!!!!
+    Solution: retain the width setting and force an overflow on the 
+                horizontal axis (main axis) to go to the next line (row)
+    rule:  flex-wrap: nowrap (default) | wrap | wrap-reverse
+*/
+main, footer{
+    background-color: #c0c0c0;
     display: flex;
-}
-
-footer{
-    margin-bottom: 200px;
+    flex-wrap:wrap;
 }
